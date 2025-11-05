@@ -7,14 +7,12 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 
 export class SumarNumerosComponent implements OnInit {
-    @ViewChild("cajanumero1") cajaNumero1Ref: ElementRef;
-    @ViewChild("cajanumero2") cajaNumero2Ref: ElementRef;
+    @ViewChild("cajanumero1") cajaNumero1Ref!: ElementRef;
+    @ViewChild("cajanumero2") cajaNumero2Ref!: ElementRef;
     public suma: number;
     constructor() { 
         //En angular aunque sean referencias, todas las variables deben
         //ser instanciasdas
-        this.cajaNumero1Ref = new ElementRef(0)
-        this.cajaNumero2Ref = new ElementRef(0)
         this.suma = 0;
     }
 
