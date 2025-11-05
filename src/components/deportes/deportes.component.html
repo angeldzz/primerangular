@@ -1,5 +1,22 @@
 <div>
     <h1>Deportes Angular</h1>
+    <ul>
+        <!-- Tipos de Formas de hacer ifs -->
+        <!-- [style.color]="num % 2 === 0 ? 'red' : 'green'" -->
+        
+
+        <!-- [ngClass]="{
+            rojo: num % 2 === 0,
+            verde:num % 2 !== 0,
+        }" -->
+
+
+        <!-- [class.rojo]="num % 2 === 0"
+        [class.verde]="num % 2 !== 0" -->
+        <li *ngFor="let num of numeros">
+            {{num  * 2 }}
+        </li>
+    </ul>
     <h2>Numero de deportes {{ sports.length }}</h2>
     <div *ngIf="sports.length < 5; then condicionTrue; else condicionelse">
     </div>
