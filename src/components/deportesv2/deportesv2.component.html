@@ -1,0 +1,19 @@
+<div>
+    <h1>@Directivas</h1>
+    <ul>
+        @for( num of numeros; track num; let i = $index){
+            @if(num % 2 === 0){
+                <li class="verde">{{ num }}</li>
+            }@else{
+                <li class="rojo">{{ num }}</li>
+            }
+        }
+    </ul>
+    <ul>
+    @for (sport of sports; track sport; let i = $index){
+        <li>Index {{ i }}, Sport: {{ sport }}</li>
+    }@empty{
+        <li>Sin elementos</li>
+    }
+    </ul>
+</div>
