@@ -1,9 +1,14 @@
 <div>
     <h1>Deportes Angular</h1>
     <h2>Numero de deportes {{ sports.length }}</h2>
-    <div *ngIf="sports.length < 5">
-        <p style="color: red;">Tienes menos de 5 deportes</p>
+    <div *ngIf="sports.length < 5; then condicionTrue; else condicionelse">
     </div>
+    <ng-template #condicionTrue>
+        <p style="color: red;">Tienes menos de 5 deportes</p>
+    </ng-template>
+    <ng-template #condicionelse>
+        <p style="color: green;">Tienes mas de 5 deportes</p>
+    </ng-template>
     <p>El primer deporte es {{ sports[0] }}</p>
     <ul>
         <li *ngFor="let deporte of sports; let i = index">

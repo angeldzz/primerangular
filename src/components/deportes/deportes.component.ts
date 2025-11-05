@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class Deportes implements OnInit {
     public sports: Array<string>
     constructor() { 
-        this.sports = ["Canicas", "Curling", "Dardos", "Petanca"]
+        this.sports = ["Canicas", "Curling", "Dardos", "Petanca","Tenis"]
     }
 
     ngOnInit():void { 
