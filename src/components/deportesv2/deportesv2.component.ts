@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 
+
 @Component({
     selector: 'app-deportesv2',
     templateUrl: './deportesv2.component.html',

@@ -6,6 +6,8 @@ import { PrimerComponent } from '../components/primercomponent/primer.component'
 import { HooksAngular } from '../components/hooksangular/hooksangular.component';
 import { Deportes } from '../components/deportes/deportes.component';
 import { DeportesV2Component } from '../components/deportesv2/deportesv2.component';
+import { FormsModule } from '@angular/forms';
+import { FormBindingComponent } from '../components/formbinding/formbinding.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,11 @@ import { DeportesV2Component } from '../components/deportesv2/deportesv2.compone
     PrimerComponent,
     HooksAngular,
     Deportes,
-    DeportesV2Component
+    DeportesV2Component,
+    FormBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
