@@ -1,1 +1,24 @@
-<p>tablamultiplicar.component works!</p>
+<div>
+    <h1>Tabla de Multiplicar (clasico)</h1>
+    <form #tablaform="ngForm">
+        <label>Introduzca Numero</label>
+        <input type="number" name="cajaNumero" #cajaNumero>
+        <button (click)="realizarTabla()">Realizar Operaciones</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Operacion</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(num of resultados; track num; let i = $index){
+                <tr>
+                    <td>{{ numero }} * {{ i + 1 }}</td>
+                    <td>{{ num }}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

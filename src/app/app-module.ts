@@ -9,7 +9,7 @@ import { DeportesV2Component } from '../components/deportesv2/deportesv2.compone
 import { FormsModule } from '@angular/forms';
 import { FormBindingComponent } from '../components/formbinding/formbinding.component';
 import { SumarNumerosComponent } from '../components/sumarnumeros/sumarnumeros.component';
-import { TestComponent } from '../components/test.component/test.component';
+import { TablamultiplicarComponent } from '../components/tablamultiplicar/tablamultiplicar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { TestComponent } from '../components/test.component/test.component';
     DeportesV2Component,
     FormBindingComponent,
     SumarNumerosComponent,
-    TestComponent
+    TablamultiplicarComponent
   ],
   imports: [
     BrowserModule,FormsModule
